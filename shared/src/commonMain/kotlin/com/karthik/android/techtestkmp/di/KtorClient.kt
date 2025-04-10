@@ -1,6 +1,6 @@
 package com.karthik.android.techtestkmp.di
 
-import com.karthik.android.techtestkmp.data.network.APIConstants
+import com.karthik.android.techtestkmp.data.network.PlatformConfig
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.HttpClientEngine
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -26,7 +26,7 @@ class KtorClient {
             defaultRequest {
                 url {
                     protocol = URLProtocol.HTTPS
-                    host = APIConstants.API_HOST
+                    host = PlatformConfig.hostName
                 }
             }
 
