@@ -1,7 +1,7 @@
 POC - Kotlin Multi Platform 
 Tech stack used:
--Kotin
+-Kotlin
 -Jetpack Compose
 -Coroutine
--Ketor (Network call)
+-Ktor (Network call)
 -Koin (DI)
