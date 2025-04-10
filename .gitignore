@@ -1,6 +1,7 @@
 *.iml
 .gradle
 .idea
+.kotlin
 .DS_Store
 build
 captures
@@ -8,3 +9,7 @@ captures
 .cxx
 local.properties
 xcuserdata
+/androidApp/keystore
+/androidApp/environment.properties
+/androidApp/QA1
+/androidApp/QA2
