@@ -9,7 +9,7 @@ captures
 .cxx
 local.properties
 xcuserdata
-/keystore/
+/androidApp/keystore
 /androidApp/environment.properties
 /androidApp/QA1
 /androidApp/QA2
