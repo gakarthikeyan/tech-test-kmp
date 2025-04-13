@@ -43,14 +43,12 @@ android {
         create("QA1"){
             dimension = "env"
             applicationIdSuffix = ".qa1"
-            versionNameSuffix = "-qa1"
             resValue("string", "app_name", "QA1 Books")
         }
 
         create("QA2"){
             dimension = "env"
             applicationIdSuffix = ".qa2"
-            versionNameSuffix = "-qa2"
             resValue("string", "app_name", "QA2 Books")
         }
 
@@ -99,4 +97,16 @@ dependencies {
 //    implementation("io.insert-koin:koin-bom:3.5.4")
     implementation(libs.koin.android)
     implementation(libs.koin.androidx.compose)
+
+    // Chucker for Debug
+    debugImplementation(libs.library)
+
+    // No-op version for Release (won’t collect or show any data)
+    releaseImplementation(libs.library.no.op)
+
+    // Okhttp client setup for chucker interceptor
+    implementation(libs.okhttp)
+    implementation(libs.koin.android.v350)
+    // Ktor Client OkHttp engine
+    implementation(libs.ktor.client.okhttp.v234)
 }

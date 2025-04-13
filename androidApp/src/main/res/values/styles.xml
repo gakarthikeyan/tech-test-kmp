@@ -1,3 +1,9 @@
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar"/>
+
+    <style name="Theme.MyApp.Splash" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
 </resources>
