@@ -5,6 +5,8 @@ import com.karthik.android.techtestkmp.di.KtorClient
 import org.koin.dsl.module
 
 /**
+ * POC of Kotlin Multiplatform (Android Module)
+ *
  *  For android alone network call with
  *  chucker interceptor
  */

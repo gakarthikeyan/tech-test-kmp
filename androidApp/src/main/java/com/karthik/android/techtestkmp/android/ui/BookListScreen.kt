@@ -31,6 +31,13 @@ import com.karthik.android.techtestkmp.presentation.book.BookViewModel
 import com.karthik.android.techtestkmp.utils.UiState
 import org.koin.compose.koinInject
 
+/**
+ * POC of Kotlin Multiplatform (Android Module)
+ *
+ * [BookListScreen] composable function
+ * collect books data from network and populate
+ * books list
+ */
 @Composable
 fun BookListScreen(){
 
@@ -62,7 +69,13 @@ fun BookListScreen(){
 
 
 }
-
+/**
+ *[BookItem] composable function
+ * custom UI for book view
+ *
+ * @param book: instance of [Book]
+ * @param context: current context
+ */
 @Composable
 fun BookItem(book: Book, context: Context = LocalContext.current){
     Column (

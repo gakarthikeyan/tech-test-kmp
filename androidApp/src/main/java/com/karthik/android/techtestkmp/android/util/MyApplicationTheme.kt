@@ -1,4 +1,4 @@
-package com.karthik.android.techtestkmp.android
+package com.karthik.android.techtestkmp.android.util
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -14,7 +14,12 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-
+/**
+ * POC of Kotlin Multiplatform (Android Module)
+ *
+ * [MyApplicationTheme] utility compose function
+ * theme and typography setup
+ */
 @Composable
 fun MyApplicationTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

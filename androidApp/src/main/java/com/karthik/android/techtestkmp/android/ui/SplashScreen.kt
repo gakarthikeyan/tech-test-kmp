@@ -21,6 +21,14 @@ import com.karthik.android.techtestkmp.android.R
 import com.karthik.android.techtestkmp.android.util.Screen
 import kotlinx.coroutines.delay
 
+/**
+ * POC of Kotlin Multiplatform (Android Module)
+ *
+ * [SplashScreen] Composable function
+ * setup splash screen and main screen navigation
+ *
+ * @param naveController: instance of [NavHostController]
+ */
 @Composable
 fun SplashScreen(naveController: NavHostController){
 

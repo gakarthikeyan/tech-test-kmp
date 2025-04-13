@@ -7,11 +7,20 @@ import io.ktor.client.HttpClient
 import io.ktor.client.engine.okhttp.OkHttp
 import okhttp3.OkHttpClient
 /**
+ * POC of Kotlin Multiplatform (Android Module)
+ *
  *  For android alone http client setup with
- *  chucker interceptor
+ *  chucker interceptor.
+ *
+ *  @param context: instance of [Context]
  */
 class HttpClientProvider(val context: Context) {
 
+    /**
+     * Method to setup Httpclient.
+     *
+     *  @return http client with chucker interceptor.
+     */
     fun getClient(): HttpClient {
 
         val okHttpClient = OkHttpClient.Builder().apply {

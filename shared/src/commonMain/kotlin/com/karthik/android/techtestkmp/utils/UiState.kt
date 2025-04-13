@@ -1,5 +1,10 @@
 package com.karthik.android.techtestkmp.utils
-
+/**
+ * POC of Kotlin Multiplatform (Core Module)
+ *
+ * [UiState] sealed class for network call
+ * classification
+ */
 sealed class UiState <out T> {
 
     object Loading: UiState<Nothing>()
